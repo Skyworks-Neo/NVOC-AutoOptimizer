@@ -9,7 +9,6 @@ keywords = ["nvidia", "gtx", "gpu", "nvapi", "overclock"]
 
 readme = "README.md"
 license = "Apache-2.0"
-license-file = "LICENSE"
 
 include = ["/src/**", "/README*", "/LICENSE*"]
 
