@@ -8,9 +8,9 @@ description = "NVIDIA GPU curve optimizer"
 keywords = ["nvidia", "gtx", "gpu", "nvapi", "overclock"]
 
 readme = "README.md"
-license = "MIT"
+license = "Apache-2.0"
 
-include = ["/src/**", "/README*"]
+include = ["/src/**", "/README*", "/LICENSE*"]
 
 [profile.release]
 incremental = true

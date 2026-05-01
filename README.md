@@ -834,4 +834,10 @@ cargo build --release
 
 ---
 
+## 许可协议
+
+本项目采用 **Apache License 2.0** 许可发布，详见仓库根目录的 `LICENSE` 文件。
+
+---
+
 *NVOC-AutoOptimizer v0.0.3 — by Skyworks*
