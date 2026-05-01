@@ -1,5 +1,7 @@
 # NVOC-AutoOptimizer
 
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
+This project is licensed under the [Apache License 2.0](LICENSE).
 > **NVIDIA GPU VF 曲线自动超频优化器**  
 > 基于 Rust 编写，通过 NVAPI / NVML 接口操控 GPU，配合 `cli-stressor` 压力测试进行逐点电压-频率（V-F Curve）自动扫描，为
 > NVIDIA GPU 找出每个电压点的稳定超频上限并生成最优化曲线。
@@ -831,6 +833,16 @@ cargo build --release
 - 扫描过程触发 GPU 崩溃和系统 BSOD 是本工具设计行为的一部分，**不会造成 GPU 永久损坏**，但使用者需自行评估风险
 - 本工具产生的超频设置在系统重启后不会自动保留，需要重新 `import` 曲线方可生效
 - **本工具不对因使用不当导致的任何硬件损坏、数据丢失或其他损失负责**
+
+---
+
+## 许可协议
+
+本项目采用 **Apache License 2.0** 许可发布，完整条款请参见仓库根目录的 `LICENSE` 文件。
+
+- SPDX 标识：`Apache-2.0`
+- Crate 清单已通过 `license-file = "LICENSE"` 明确指向许可文本
+- 发布包与源码仓库会保留 `LICENSE` 文件，便于分发与二次引用
 
 ---
 
