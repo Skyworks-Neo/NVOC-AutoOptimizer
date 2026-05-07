@@ -381,6 +381,12 @@ pub fn get_arguments() -> Command {
                         .use_value_delimiter(false),
                 )
                 .arg(
+                    Arg::new("reset_app_clocks")
+                        .long("reset-app-clocks")
+                        .action(ArgAction::SetTrue)
+                        .help("Reset NVML applications clocks to defaults."),
+                )
+                .arg(
                     Arg::new("locked_core_clocks")
                         .long("locked-core-clocks")
                         .value_names(["MIN_MHZ", "MAX_MHZ"])
@@ -849,3 +855,5 @@ pub fn get_arguments() -> Command {
                 )
         )
 }
+
+
